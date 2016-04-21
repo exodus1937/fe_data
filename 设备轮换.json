@@ -1,0 +1,43 @@
+  /*  机组启停首页列表 */
+    
+    /* 定期试验首页列表 */
+     
+       orgid = 'c21834b4-1cb0-490f-a2a8-deeaf7f7e065';
+    $.ajax({
+       url: "http://127.0.0.1:8080/jsjd/portal/getSYList.do?orgid="+orgid,
+     
+       //dataType : "json",
+       success: function(data) {
+           document.write(data);
+           console.log(data);
+       } 
+     })        
+     参数：
+     orgid 
+     字段描述：
+     UNIT_ID      机组ID
+     NAME         试验名称
+     STARTTIME    发生时间
+     SPECIAL_NAME 专业名称 
+     ORG_ID
+     
+     success：
+     [{"SPECIAL_NAME":"汽机专业","NAME":"主机阀门全行程活动试验（RSV1）","UNIT_ID":"1","STARTTIME":"2016-04-19 11:21:00","ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"},{"SPECIAL_NAME":"汽机专业","NAME":"主机阀门全行程活动试验（TV1）","UNIT_ID":"1","STARTTIME":"2016-04-18 15:51:00","ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"},{"SPECIAL_NAME":"汽机专业","NAME":"主机阀门全行程活动试验（TV2）","UNIT_ID":"1","STARTTIME":"2016-04-17 08:05:00","ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"}]
+    
+     /* 定期试验树  */
+     
+        orgid = 'c21834b4-1cb0-490f-a2a8-deeaf7f7e065';
+     $.ajax({
+        url: "http://127.0.0.1:8080/jsjd/portal/getSYTreeMenu.do?orgid="+orgid,
+      
+        //dataType : "json",
+        success: function(data) {
+            document.write(data);
+            console.log(data);
+        } 
+      })   
+       参数：
+     orgid 
+          
+     [{"children":[{"children":[{"children":[{"children":[],"id":"30","name":"柴油发电机启动试验"},{"children":[],"id":"31","name":"事故照明MCC切换试验"}],"id":"10","name":"电气专业"},{"children":[{"children":[],"id":"32","name":"主机阀门全行程活动试验（TV1）"},{"children":[],"id":"33","name":"主机阀门全行程活动试验（TV2）"},{"children":[],"id":"34","name":"主机阀门全行程活动试验（RSV1）"},{"children":[],"id":"35","name":"主机阀门全行程活动试验（RSV2）"},{"children":[],"id":"36","name":"主机阀门20%行程活动试验（TV1、TV2、IV1、IV2、IV3、IV4）"},{"children":[],"id":"37","name":"主机盘车电机启动试验"},{"children":[],"id":"38","name":"主机交流油泵联动试验"},{"children":[],"id":"39","name":"主机直流油泵联动试验"},{"children":[],"id":"40","name":"高压备用密封油泵启动试验"},{"children":[],"id":"41","name":"发电机空侧直流油泵试启"},{"children":[],"id":"42","name":"#1小机直流润滑油泵试启"},{"children":[],"id":"43","name":"#2小机直流润滑油泵试启"},{"children":[],"id":"44","name":"#1备用工频凝结水泵试启"},{"children":[],"id":"45","name":"#2备用工频凝结水泵试启"},{"children":[],"id":"46","name":"凝汽器真空严密性试验"},{"children":[],"id":"47","name":"新增闭式泵试启"},{"children":[],"id":"48","name":"电动给水泵启动试验"},{"children":[],"id":"49","name":"真空泵启动试验"},{"children":[],"id":"50","name":"发电机漏氢试验"}],"id":"11","name":"汽机专业"},{"children":[{"children":[],"id":"51","name":"消防水泵点动试验"},{"children":[],"id":"52","name":"消防喷淋泵试验"}],"id":"12","name":"消防专业"}],"id":"3","name":"#1机组"},{"children":[{"children":[{"children":[],"id":"53","name":"柴油发电机启动试验"},{"children":[],"id":"54","name":"事故照明MCC切换试验"}],"id":"13","name":"电气专业"},{"children":[{"children":[],"id":"55","name":"主机阀门全行程活动试验（TV1）"},{"children":[],"id":"56","name":"主机阀门全行程活动试验（TV2）"},{"children":[],"id":"57","name":"主机阀门全行程活动试验（RSV1）"},{"children":[],"id":"58","name":"主机阀门全行程活动试验（RSV2）"},{"children":[],"id":"59","name":"主机阀门20%行程活动试验（TV1、TV2、IV1、IV2、IV3、IV4）"},{"children":[],"id":"60","name":"主机盘车电机启动试验"},{"children":[],"id":"61","name":"主机交流油泵联动试验"},{"children":[],"id":"62","name":"主机直流油泵联动试验"},{"children":[],"id":"63","name":"高压备用密封油泵启动试验"},{"children":[],"id":"64","name":"发电机空侧直流油泵试启"},{"children":[],"id":"65","name":"#1小机直流润滑油泵试启"},{"children":[],"id":"66","name":"#2小机直流润滑油泵试启"},{"children":[],"id":"67","name":"#1备用工频凝结水泵试启"},{"children":[],"id":"68","name":"#2备用工频凝结水泵试启"},{"children":[],"id":"69","name":"凝汽器真空严密性试验"},{"children":[],"id":"70","name":"新增闭式泵试启"},{"children":[],"id":"71","name":"电动给水泵启动试验"},{"children":[],"id":"72","name":"真空泵启动试验"},{"children":[],"id":"73","name":"发电机漏氢试验"}],"id":"14","name":"汽机专业"}],"id":"4","name":"#2机组"},{"children":[{"children":[{"children":[],"id":"74","name":"柴油发电机启动试验"},{"children":[],"id":"75","name":"事故照明MCC切换试验"}],"id":"15","name":"电气专业"},{"children":[{"children":[],"id":"76","name":"主机阀门全行程活动试验（TV1）"},{"children":[],"id":"77","name":"主机阀门全行程活动试验（TV2）"},{"children":[],"id":"78","name":"主机阀门全行程活动试验（RSV1）"},{"children":[],"id":"79","name":"主机阀门全行程活动试验（RSV2）"},{"children":[],"id":"80","name":"主机阀门20%行程活动试验（TV1、TV2、IV1、IV2、IV3、IV4）"},{"children":[],"id":"81","name":"主机盘车电机启动试验"},{"children":[],"id":"82","name":"主机交流油泵联动试验"},{"children":[],"id":"83","name":"主机直流油泵联动试验"},{"children":[],"id":"84","name":"高压备用密封油泵联动试验"},{"children":[],"id":"85","name":"发电机空侧直流油泵试启"},{"children":[],"id":"86","name":"#1备用工频凝结水泵试启"},{"children":[],"id":"87","name":"#2备用工频凝结水泵试启"},{"children":[],"id":"88","name":"凝汽器真空严密性试验"},{"children":[],"id":"89","name":"炉水循环泵应急冷却水泵启动试验"},{"children":[],"id":"90","name":"发电机漏氢试验"}],"id":"16","name":"汽机专业"},{"children":[{"children":[],"id":"91","name":"#2备用炉水循环泵启动试验"}],"id":"17","name":"锅炉专业"}],"id":"5","name":"#3机组"},{"children":[{"children":[{"children":[],"id":"92","name":"柴油发电机启动试验"},{"children":[],"id":"93","name":"事故照明MCC切换试验"}],"id":"18","name":"电气专业"},{"children":[{"children":[],"id":"94","name":"主机阀门全行程活动试验（TV1）"},{"children":[],"id":"95","name":"主机阀门全行程活动试验（TV2）"},{"children":[],"id":"96","name":"主机阀门全行程活动试验（RSV1）"},{"children":[],"id":"97","name":"主机阀门全行程活动试验（RSV2）"},{"children":[],"id":"98","name":"主机阀门20%行程活动试验（TV1、TV2、IV1、IV2、IV3、IV4）"},{"children":[],"id":"99","name":"主机盘车电机启动试验"},{"children":[],"id":"100","name":"主机交流油泵联动试验"},{"children":[],"id":"101","name":"主机直流油泵联动试验"},{"children":[],"id":"102","name":"高压备用密封油泵联动试验"},{"children":[],"id":"103","name":"发电机空侧直流油泵试启"},{"children":[],"id":"104","name":"#1备用工频凝结水泵试启"},{"children":[],"id":"105","name":"#2备用工频凝结水泵试启"},{"children":[],"id":"106","name":"凝汽器真空严密性试验"}],"id":"19","name":"汽机专业"},{"children":[],"id":"20","name":"锅炉专业"}],"id":"6","name":"#4机组"}],"id":"1","name":"岱海发电"}]
+ 
