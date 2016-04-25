@@ -65,7 +65,7 @@
     url: "http://127.0.0.1:8080/jsjd/portal.do",
     type: "POST",
     data:{
-      method:"getJzqtExpinfos",
+      method:"getJzqtExpinfo",
         orgid:"c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
         g_id:"1",
         type:"QD",
