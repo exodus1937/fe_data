@@ -94,9 +94,6 @@
  
 {"total":4,"exper":[{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"a99b2217-d43c-4e2a-ac1e-f9e563af268e","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-12 18:25:32","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"20a141c1-056a-4968-990e-5311c8890ec0","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-15 13:05:21","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"339a2879-5b5b-4573-80e8-8730d7f029d9","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-14 15:16:30","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"08ebc2e4-d0f8-4293-a1b9-1537606cea3b","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-13 10:54:00","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"}]}
 
- 
-
- 
     /*修改机组启停描述字段*/
           $.ajax({
     url: "http://127.0.0.1:8080/jsjd/portal.do",

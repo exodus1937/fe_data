@@ -19,6 +19,7 @@
      MCOUNT        本月已完成
 [{"ORG_NAME":"宁东发电","YSCOUNT":1632,"MCOUNT":0,"YCOUNT":0,"MSCOUNT":136,"ORG_ID":"472212af-1977-462b-a74a-a1f36ed6562d"},{"ORG_NAME":"岱海发电","YSCOUNT":1292,"MCOUNT":1,"YCOUNT":1,"MSCOUNT":107,"ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"}]
     
+    
     /* 定期试验首页列表 */
      
        orgid = 'c21834b4-1cb0-490f-a2a8-deeaf7f7e065';
