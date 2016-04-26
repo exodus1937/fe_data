@@ -1,4 +1,4 @@
-
+//add author dulei 
 /*var reqUrl = parent.document.getElementById("index_page").contentWindow.location.href;
 //提取url字符串到json数据；
 function queryString(url){
