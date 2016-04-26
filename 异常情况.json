@@ -19,3 +19,72 @@
     })             
     success:
      {"total":2,"exper":[{"endtime":"2016-04-20 17:43:05","id":"7300b5b1-0013-4f58-8934-17120c95a58f","starttime":"2016-04-19 17:43:07","KKS_CODE":"NXND:DCS1_A0GCK21AP001CE,NXND:DCS1_10NCS00YA04,NXND:DCS1_10CBD01AI003,NXND:DCS1_HRHP,NXND:DCS1_HRHT,NXND:DCS1_PAPRESS","name":"","KKS_NAME":"主汽压力,主汽温度,机组负荷,再热汽压力,再热汽温度,热一次风母管压力","code":"GZ:NXND:10GL02:01"},{"endtime":"2016-04-05 09:24:53","id":"62ee559d-d852-49e5-bef9-ac76247fb156","starttime":"2016-04-02 17:28:00","KKS_CODE":"NXND:DCS1_A0GCK21AP001CE,NXND:DCS1_10NCS00YA04,NXND:DCS1_10CBD01AI003,NXND:DCS1_HRHP,NXND:DCS1_HRHT,NXND:DCS1_PAPRESS","name":"暂无说明","KKS_NAME":"主汽压力,主汽温度,机组负荷,再热汽压力,再热汽温度,热一次风母管压力","code":"GZ:NXND:10JZ01:01"}]} 
+      /* 异常情况首页列表 */
+      
+          orgid = '472212af-1977-462b-a74a-a1f36ed6562d';
+     $.ajax({
+        url: "http://127.0.0.1:8080/jsjd/portal/getGZList.do?orgid="+orgid,
+      
+        //dataType : "json",
+        success: function(data) {
+            document.write(data);
+            console.log(data);
+        } 
+      })         
+       
+        //异常情况一二级界面
+        
+          $.ajax({
+        url: "http://127.0.0.1:8080/jsjd/portal.do",
+        type: "POST",
+        data:{
+        	method:"getGZCountByOrgid",
+            org_id:"472212af-1977-462b-a74a-a1f36ed6562d",
+            g_id:"1"
+        },
+         //dataType : "json", 
+        success: function(data) {
+            document.write(data);
+            console.log(data);
+        } 
+
+    })      
+     
+          //异常情况三级界面
+           $.ajax({
+        url: "http://127.0.0.1:8080/jsjd/portal.do",
+        type: "POST",
+        data:{
+        	method:"getGZCountByName",
+        	org_id:"472212af-1977-462b-a74a-a1f36ed6562d",
+            g_id:"1",
+            name:"机组故障停机"
+        },
+         //dataType : "json",  
+        success: function(data) {
+            document.write(data);
+            console.log(data);
+        }
+
+    })            
+  
+    //异常情况实验说明
+          $.ajax({
+    url: "http://127.0.0.1:8080/jsjd/portal.do",
+    type: "POST",
+    data:{
+    	method:"getGZTime",
+        org_id:"472212af-1977-462b-a74a-a1f36ed6562d",
+        g_id:"1",
+        name:"机组故障停机",
+        pagenum:1,
+        pagesize:5
+    },
+    //dataType : "json",
+    success: function(data) {
+        document.write(data);
+        console.log(data);
+    }  
+    })             
+      
+    
