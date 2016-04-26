@@ -21,6 +21,7 @@
     [{"ORG_NAME":"宁东发电","YSCOUNT":7440,"MCOUNT":2,"YCOUNT":9,"MSCOUNT":620,"ORG_ID":"472212af-1977-462b-a74a-a1f36ed6562d"},
     {"ORG_NAME":"岱海发电","YSCOUNT":5580,"MCOUNT":0,"YCOUNT":0,"MSCOUNT":463,"ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"}]
       
+      
       /*设备轮换首页列表*/
          orgid = '472212af-1977-462b-a74a-a1f36ed6562d';
      $.ajax({
@@ -33,7 +34,36 @@
         } 
       })      
        
-       
+       /* 设备轮换树  */
+     
+        orgid = 'c21834b4-1cb0-490f-a2a8-deeaf7f7e065';
+     $.ajax({
+        url: "http://127.0.0.1:8080/jsjd/portal/getTreeMenu.do?orgid="+orgid,
+      
+        //dataType : "json",
+        success: function(data) {
+            document.write(data);
+            console.log(data);
+        } 
+      })   
+        /*  设备轮换一二级界面 */
+     
+     
+       $.ajax({
+    url: "http://127.0.0.1:8080/jsjd/portal.do",
+    type: "POST",
+    data:{
+    	method:"getLHCountByOrgid",
+        org_id:"c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
+        g_id:"2"
+    },
+    //dataType : "json",
+    success: function(data) {
+        document.write(data);
+        console.log(data);
+    }  
+      })       
+      
        /*设备轮换三级界面*/
        $.ajax({
         url: "http://127.0.0.1:8080/jsjd/portal.do",
@@ -78,23 +108,23 @@
     })    
       
        
-        /*  设备轮换一二级界面 */
-     
-     
-       $.ajax({
-    url: "http://127.0.0.1:8080/jsjd/portal.do",
-    type: "POST",
-    data:{
-    	method:"getLHCountByOrgid",
-        org_id:"c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
-        g_id:"2"
-    },
-    //dataType : "json",
-    success: function(data) {
-        document.write(data);
-        console.log(data);
-    }  
-      })       
-     
       
-      
+    
+      /*修改设备轮换描述字段*/
+            $.ajax({
+     url: "http://127.0.0.1:8080/jsjd/portal.do",
+     type: "POST",
+     data:{
+     	method:"updateLHDesc",
+     	 lh_desc:"轮换",
+         id:"6d4e4a6a-9caa-45b5-837d-5c1aae1393e5"
+     },
+     //dataType : "json",
+     success: function(data) {
+         document.write(data);
+         console.log(data);
+     }  
+     })     
+     参数说明：
+     lh_desc   试验说明（页面填写内容）
+     id        记录ID
