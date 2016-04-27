@@ -216,6 +216,11 @@ function init() {
 		ycqk();
 		major_pulldown();
 		shengchanbaobiao();
+	}else{
+		jtsblh();
+		jtycqk();
+		jtjzqt();
+		jtdqsy();
 	}
 
 	getMission(userID); //工作提醒
@@ -248,13 +253,17 @@ function changeOrg() {
 		clearInterval(timer); //清除定时器;
 		/*技改显示*/
 		$('.profit').show();
+		jtsblh();
+		jtycqk();
+		jtjzqt();
+		jtdqsy();
 	}
 	jigaihref();
 	project();
 	yujing();
 	jiandubaobiao();
 
-	changeView() //指标一览
+	changeView(); //指标一览;
 	getMission(userID); //工作提醒
 	getWorksDate(userID); //监督工作
 	JTjiandubaobiao(); //集团监督报表;
@@ -724,6 +733,22 @@ function jtdqsy(){
 	var url = ctx + "/portal/getJTSYCount.do";
 	ajax(url,"JTdqsy",['ORG_NAME','YSCOUNT','YCOUNT','MSCOUNT','MCOUNT']);
 }
+//集团设备轮换
+function jtsblh() {
+	var url = ctx + "/portal/getJTLHCount.do";
+	ajax(url,"JTsblh",['ORG_NAME','YSCOUNT','YCOUNT','MSCOUNT','MCOUNT']);
+}
+//集团异常情况
+function jtycqk(){
+	var url = ctx + "/portal/getJTGZList.do";
+	ajax(url,'JTycqk',["ORG_NAME","G_ID","NAME","TIME","TYPE_DESC"]);
+	
+}
+//集团机组起停
+function jtjzqt(){
+	var url = ctx + "/portal/getJTJzqtList.do";
+	ajax(url,'JTjzqt',['ORG_NAME',"G_ID","NAME","STARTTIME"]);
+}
 
 //集团监督报表
 
@@ -895,9 +920,18 @@ function prearData(data, columns, table, diff) {
 			if (table == "ycqktable") {
 				htmlArray.push("<td align='left' class='ellipsis' ><a  title=\"" + columnValue + "\">" + columnValue + "</a></td>");
 			}
-			if(table =='JTdqsy') {
+			if(table =='JTdqsy'||table=="JTsblh"||table == "JTycqk"||table == "JTjzqt") {
 				htmlArray.push("<td align='left' class='ellipsis' ><a  title=\"" + columnValue + "\">" + columnValue + "</a></td>");
-			}			
+			}
+			/*if(table=="JTsblh"){
+				htmlArray.push("<td align='left' class='ellipsis' ><a  title=\"" + columnValue + "\">" + columnValue + "</a></td>");
+			}	
+			if(table == "JTycqk") {
+				htmlArray.push("<td align='left' class='ellipsis' ><a  title=\"" + columnValue + "\">" + columnValue + "</a></td>");
+			}		
+			if(table == "JTjzqt"){
+				htmlArray.push("<td align='left' class='ellipsis' ><a  title=\"" + columnValue + "\">" + columnValue + "</a></td>");
+			}*/	
 		}
 
 		htmlArray.push("</tr>");
@@ -967,7 +1001,7 @@ function getColumnValue(table, column, columnValue) {
 
 
 		}
-	} else if (table == "table_5" || table == 'ycqktable') {
+	} else if (table == "table_5" || table == 'ycqktable'|| table == "JTycqk"|| table =="JTjzqt") {
 		if (column == "g_id" || column == "G_ID" || column == "UNIT_ID") {
 			columnValue = "#" + columnValue;
 		}
