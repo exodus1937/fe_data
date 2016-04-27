@@ -1,0 +1,81 @@
+
+    	/*集团首页设备轮换*/
+		
+		$.ajax({
+		 url: "http://127.0.0.1:8080/jsjd/portal/getJTLHCount.do",
+		
+		 //dataType : "json",
+		 success: function(data) {
+		     document.write(data);
+		     console.log(data);
+		 } 
+		})    
+        
+      字段描述：
+     ORG_ID        电厂编号
+     ORG_NAME      电厂名称
+     YSCOUNT       本年应进行
+     YCOUNT        本年已完成
+     MSCOUNT       本月应进行
+     MCOUNT        本月已完成
+    [{"ORG_NAME":"宁东发电","YSCOUNT":7440,"MCOUNT":2,"YCOUNT":9,"MSCOUNT":620,"ORG_ID":"472212af-1977-462b-a74a-a1f36ed6562d"},
+    {"ORG_NAME":"岱海发电","YSCOUNT":5580,"MCOUNT":0,"YCOUNT":0,"MSCOUNT":463,"ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"}]
+      
+       /*集团首页定期试验*/
+		
+		$.ajax({
+		 url: "http://127.0.0.1:8080/jsjd/portal/getJTSYCount.do",
+		
+		 //dataType : "json",
+		 success: function(data) {
+		     document.write(data);
+		     console.log(data);
+		 } 
+		})       
+      字段描述：
+     ORG_ID        电厂编号
+     ORG_NAME      电厂名称
+     YSCOUNT       本年应进行
+     YCOUNT        本年已完成
+     MSCOUNT       本月应进行
+     MCOUNT        本月已完成
+[{"ORG_NAME":"宁东发电","YSCOUNT":1632,"MCOUNT":0,"YCOUNT":0,"MSCOUNT":136,"ORG_ID":"472212af-1977-462b-a74a-a1f36ed6562d"},
+{"ORG_NAME":"岱海发电","YSCOUNT":1292,"MCOUNT":1,"YCOUNT":1,"MSCOUNT":107,"ORG_ID":"c21834b4-1cb0-490f-a2a8-deeaf7f7e065"}]
+    
+      
+  	/*集团首页异常情况*/
+		  $.ajax({
+		 url: "http://127.0.0.1:8080/jsjd/portal/getJTGZList.do",
+		
+		 //dataType : "json",
+		 success: function(data) {
+		     document.write(data);
+		     console.log(data);
+		 } 
+		})   
+        字段描述：
+        ORG_NAME  电厂名称
+        G_ID      机组ID
+        NAME      异常名称
+        TYPE_DESC  异常说明
+        TIME       发生时间
+        success：
+            [{"TIME":"2016-04-02 17:28:00","TYPE_DESC":"机组故障停机","NAME":"宁东发电#1机组故障","ORG_NAME":"宁东发电","G_ID":"1","ORG_ID":"472212af-1977-462b-a74a-a1f36ed6562d"}]
+		/*集团首页机组启停*/
+		  $.ajax({
+		 url: "http://127.0.0.1:8080/jsjd/portal/getJTJzqtList.do",
+		
+		 //dataType : "json",
+		 success: function(data) {
+		     document.write(data);
+		     console.log(data);
+		 } 
+		})    
+        字段描述：
+        ORG_NAME   电厂名称
+        G_ID       机组ID
+        NAME       启停描述
+        STARTTIME  并网/解列时间
+        
+        success：
+        [{"NAME":"宁夏宁东电厂2号机组温态1启动","ORG_NAME":"宁东发电","G_ID":"2","STARTTIME":"2016-04-19 21:10:06"}]   
