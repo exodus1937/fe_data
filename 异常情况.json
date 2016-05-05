@@ -133,6 +133,8 @@
     type: "POST",
     data:{
     	method:"getGZTime",
+        year:"",
+        month:"",
         org_id:"472212af-1977-462b-a74a-a1f36ed6562d",
         g_id:"1",
         name:"机组故障停机",

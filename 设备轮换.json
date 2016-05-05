@@ -71,6 +71,8 @@
         type: "POST",
         data:{
         	method:"getLHTime",
+            year:"",
+            month:"",
             org_id:"472212af-1977-462b-a74a-a1f36ed6562d",
             g_id:"1",
             special_id:"汽机专业",

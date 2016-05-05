@@ -123,6 +123,8 @@
          type: "POST",
          data:{
          	method:"getSYTime",
+             year:"",
+             month:"",
              org_id:"c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
              g_id:"1",
              special_id:"汽机专业",
