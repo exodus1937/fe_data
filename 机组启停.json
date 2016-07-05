@@ -183,7 +183,7 @@
    
 /*机组启停趋势图（计算测点值接口）*/
  $.ajax({
-            url: “http://127.0.0.1:8080/jsjd/XipHistoryAction.do?method=getTecPro&pi_code='+code[t]+'&startTime=' + startime + '&endTime=' + endtime”,
+            url: "http://127.0.0.1:8080/jsjd/XipHistoryAction.do?method=getTecPro&pi_code='+code[t]+'&startTime=' + startime + '&endTime=' + endtime",
             type:get,
             success:function(data){
                 document.write(data)
