@@ -59,12 +59,14 @@
 
 
      /*机组启停试验记录 */
+
+
             $.ajax({
               url: "http://127.0.0.1:8080/jsjd/portal.do",
               type: "POST",
               data:{
-                method:"getJzqtExpinfo",
-                orgid:"c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
+                method:"getJzqtExp",
+                orgid:"472212af-1977-462b-a74a-a1f36ed6562d",
                 g_id:"1",
                 type:"QD",
                 pagenum:1,
@@ -85,14 +87,113 @@
 
 
              结果集说明：
+             total       记录数
+             KKS_NAME   KNAME 测点名称
+             KKS_CODE   KCODE 测点code
+             ID         记录ID
              G_ID        机组id
              NAME        启动项目 
              STARTTIME   开始时间
              ENDTIME     结束时间
              PARATIME   并网时间
              QT_DESC    启停机说明
- 
-{"total":4,"exper":[{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"a99b2217-d43c-4e2a-ac1e-f9e563af268e","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-12 18:25:32","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"20a141c1-056a-4968-990e-5311c8890ec0","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-15 13:05:21","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"339a2879-5b5b-4573-80e8-8730d7f029d9","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-14 15:16:30","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"},{"NAME":"内蒙岱海电厂1号机组冷态启动","KKS_CODE":"","G_ID":"1","PARATIME":"2016-04-07 17:45:38","ID":"08ebc2e4-d0f8-4293-a1b9-1537606cea3b","QT_DESC":null,"KKS_NAME":"","ENDTIME":"2016-04-13 10:54:00","STARTTIME":"2016-04-07 17:43:56","CODE":"QD:NMDH:1001"}]}
+ {
+    "total": 2,
+    "KKS_NAME": [
+        {
+            "KNAME": "机组负荷,总风量,汽机主汽压力,汽机主汽温度,再热蒸汽压力,机侧再热器温度平均值,过热器出口压力变化率,过热器出口蒸汽温度变化率,末再出口蒸汽温度变化率,再热蒸汽压力变化率,末级过热器出口温度平均值,再热器出口温度平均值"
+        },
+        {
+            "KNAME": "汽机转速,机组负荷,调节级压力,调节级金属温度,调节级蒸汽温度,调节级金属温度,HEP STEAM TEMP1,HEP STEAM TEMP2,HEP STEAM TEMP3,低压排汽温度,汽机轴封母管蒸汽温度,汽封减温装置调阀后温度"
+        },
+        {
+            "KNAME": "汽机转速,机组负荷,高压上外缸温度,高压下外缸温度,中压上外缸温度,中压下外缸温度,高中压缸胀差,低压缸胀差,高缸绝对膨胀（左侧）,高缸绝对膨胀（右侧）"
+        },
+        {
+            "KNAME": "汽机转速,机组负荷,#1轴振X向,#1轴振Y向,#2轴振X向,#2轴振Y向,#3轴振X向,#3轴振Y向,#4轴振X向,#4轴振Y向"
+        },
+        {
+            "KNAME": "汽机转速,机组负荷,#5轴振X向,#5轴振Y向,#6轴振X向,#6轴振Y向,#7轴振X向,#7轴振Y向,#8轴振X向,#8轴振Y向,#9轴振X向,#9轴振Y向"
+        }
+    ],
+    "KKS_CODE": [
+        {
+            "KCODE": "NXND:DCS1_10CBD01AI003,NXND:DCS1_TAF,NXND:DCS1_10NCS00YA02,NXND:DCS1_10NCS00YA04,NXND:DCS1_HRHP,NXND:DCS1_HRHT,NXND:DCS1_MSPRAT,NXND:DCS1_MSTEMRATE,NXND:DCS1_RHOUTLTEMRATE,NXND:DCS1_RHTEMRAT,NXND:DCS1_MSTEM-AVG,NXND:DCS1_RHOUTLTEM-AVG"
+        },
+        {
+            "KCODE": "NXND:DCS1_10CFA01AI01,NXND:DCS1_10CBD01AI003,NXND:DCS1_DEH1-PIA,NXND:DCS1_DEH2-FSMT,NXND:DCS1_DEH2-FSST1,NXND:DCS1_DEH2-FSMT,NXND:DCS1_DEH2-HPEXH1,NXND:DCS1_DEH2-HPEXH2,NXND:DCS1_DEH2-HPEXH3,NXND:DCS1_DEH2-LP1GVT,NXND:DCS1_10MAW01CT101,NXND:DCS1_10MAW40CT101"
+        },
+        {
+            "KCODE": "NXND:DCS1_10CFA01AI01,NXND:DCS1_10CBD01AI003,NXND:DCS1_DEH2-HPCGVT,NXND:DCS1_DEH2-HPBGVT,NXND:DCS1_DEH2-IPCGNT,NXND:DCS1_DEH2-IPBGNT,NXND:DCS1_DEH2-DEGENA,NXND:DCS1_DEH2-DEGENC,NXND:DCS1_10MAD00EX101,NXND:DCS1_10MAD00EX102"
+        },
+        {
+            "KCODE": "NXND:DCS1_10CFA01AI01,NXND:DCS1_10CBD01AI003,NXND:DCS1_DEH2-VB1X,NXND:DCS1_DEH2-VB1Y,NXND:DCS1_DEH2-VB2X,NXND:DCS1_DEH2-VB2Y,NXND:DCS1_DEH2-VB3X,NXND:DCS1_DEH2-VB3Y,NXND:DCS1_DEH2-VB4X,NXND:DCS1_DEH2-VB4Y"
+        },
+        {
+            "KCODE": "NXND:DCS1_10CFA01AI01,NXND:DCS1_10CBD01AI003,NXND:DCS1_DEH2-VB5X,NXND:DCS1_DEH2-VB5Y,NXND:DCS1_DEH2-VB6X,NXND:DCS1_DEH2-VB6Y,NXND:DCS1_DEH2-VB7X,NXND:DCS1_DEH2-VB7Y,NXND:DCS1_DEH2-VB8X,NXND:DCS1_DEH2-VB8Y,NXND:DCS1_DEH2-VB9X,NXND:DCS1_DEH2-VB9Y"
+        }
+    ],
+    "expr": [
+        {
+            "ADUIT_STATUS": "A",
+            "NAME": "宁夏宁东电厂1号机组热态启动",
+            "G_ID": "1",
+            "PARATIME": "2016-05-06 22:11:39",
+            "ID": "e34d712c-9247-46c6-94d7-128dba6fb76e",
+            "QT_DESC": "A级检修",
+            "ENDTIME": "2016-05-06 23:21:30",
+            "STARTTIME": "2016-05-06 21:08:42",
+            "ORG_ID": "472212af-1977-462b-a74a-a1f36ed6562d",
+            "CODE": "QD:NXND:1001"
+        },
+        {
+            "ADUIT_STATUS": "A",
+            "NAME": "宁夏宁东电厂1号机组冷态启动",
+            "G_ID": "1",
+            "PARATIME": "2016-04-05 10:42:00",
+            "ID": "ec3c7621-e866-4482-af33-0fbf9942ccc8",
+            "QT_DESC": "",
+            "ENDTIME": "2016-04-05 10:45:00",
+            "STARTTIME": "2016-04-05 10:25:00",
+            "ORG_ID": "472212af-1977-462b-a74a-a1f36ed6562d",
+            "CODE": "QD:NXND:1001"
+        }
+    ]
+}
+
+ $.ajax({
+      url: "http://127.0.0.1:8080/jsjd/portal.do",
+      type: "POST",
+      data:{
+        method:"getJzqtExp",
+        orgid:"472212af-1977-462b-a74a-a1f36ed6562d",
+        g_id:"1",
+        type:"QD",
+        pagenum:1,
+        pagesize:5 
+      },
+      //dataType : "json",
+      success: function(data) {
+          document.write(data);
+          console.log(data);
+      }  
+    })            
+   
+    </script>
+    
+    127.0.0.1:8080/jsjd/XipHistoryAction.do?method=getJzqtgraph&pi_code=NXND:DCS1_10CBD01AI003&startTime=2016-05-06 21:08:42&endTime=2016-05-06 23:21:30
+ 127.0.0.1:8080/jsjd/SYExportAction.do?method=getSYExport&sy_id=3147de-80fb-4cb8-b79c-5e110d22c354
+
+/*机组启停趋势图（计算测点值接口）*/
+ $.ajax({
+            url: “http://127.0.0.1:8080/jsjd/XipHistoryAction.do?method=getTecPro&pi_code='+code[t]+'&startTime=' + startime + '&endTime=' + endtime”,
+            type:get,
+            success:function(data){
+                document.write(data)
+                console.log(data);
+                
+            }
+        })
 
     /*修改机组启停描述字段*/
           $.ajax({
