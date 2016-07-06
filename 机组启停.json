@@ -97,7 +97,10 @@
              ENDTIME     结束时间
              PARATIME   并网时间
              QT_DESC    启停机说明
- {
+
+
+
+{
     "total": 2,
     "KKS_NAME": [
         {
@@ -133,6 +136,23 @@
             "KCODE": "NXND:DCS1_10CFA01AI01,NXND:DCS1_10CBD01AI003,NXND:DCS1_DEH2-VB5X,NXND:DCS1_DEH2-VB5Y,NXND:DCS1_DEH2-VB6X,NXND:DCS1_DEH2-VB6Y,NXND:DCS1_DEH2-VB7X,NXND:DCS1_DEH2-VB7Y,NXND:DCS1_DEH2-VB8X,NXND:DCS1_DEH2-VB8Y,NXND:DCS1_DEH2-VB9X,NXND:DCS1_DEH2-VB9Y"
         }
     ],
+    "POINT_MEAS": [
+        {
+            "PMEAS": "MW,t/h,Mpa,℃,Mpa,℃,Mpa/min,℃/min,℃/min,Mpa/min,℃,℃"
+        },
+        {
+            "PMEAS": "rpm/min,MW,Mpa,℃,℃,℃,℃,℃,℃,℃,℃,℃"
+        },
+        {
+            "PMEAS": "rpm/min,MW,℃,℃,℃,℃,mm,mm,mm,mm"
+        },
+        {
+            "PMEAS": "rpm/min,MW,um,um,um,um,um,um,um,um"
+        },
+        {
+            "PMEAS": "rpm/min,MW,um,um,um,um,um,um,um,um,um,um"
+        }
+    ],
     "expr": [
         {
             "ADUIT_STATUS": "A",
@@ -161,25 +181,6 @@
     ]
 }
 
- $.ajax({
-      url: "http://127.0.0.1:8080/jsjd/portal.do",
-      type: "POST",
-      data:{
-        method:"getJzqtExp",
-        orgid:"472212af-1977-462b-a74a-a1f36ed6562d",
-        g_id:"1",
-        type:"QD",
-        pagenum:1,
-        pagesize:5 
-      },
-      //dataType : "json",
-      success: function(data) {
-          document.write(data);
-          console.log(data);
-      }  
-    })            
-   
-    </script>
    
 /*机组启停趋势图（计算测点值接口）*/
  $.ajax({
