@@ -19,7 +19,6 @@
         time     发生时间
         type_desc 异常说明
         special_name  故障类型
-     
     
 success：
 [
