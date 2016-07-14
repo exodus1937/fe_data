@@ -17,8 +17,10 @@
         g_id     机组
         name     异常名称
         time     发生时间
+        type_desc 异常说明
         special_name  故障类型
      
+    
 success：
 [
     {
