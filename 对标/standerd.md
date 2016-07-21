@@ -14,11 +14,11 @@ param       |type       |nullable   |description
 accout      |str        |false      |账户名或登录邮箱
 password    |str(6,16)  |false      |用户的密码
 #### Response:
-token|str|token
 param|description
 ----|---------------
 result|是否成功
 desc|有用的描述信息
 id|用户id
 
-    一些补充
+    一些补充 
+    
