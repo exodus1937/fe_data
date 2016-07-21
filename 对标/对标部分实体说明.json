@@ -1,0 +1,204 @@
+//指标信息
+{
+    "applyId":"a10fba38-f5c0-479a-b161-f6294ffb206a",//申请ID
+    "data":[
+        {
+            "appType":"A",    // A 申报金额 V 指标 
+            "applyId":"a10fba38-f5c0-479a-b161-f6294ffb206a", //电厂申报主数据id
+            "createTime":1468390774147,//创建时间
+            "createUserId":"createUserId",//创建人
+            "createUserName":"createUserName",//创建人名称
+            "dataType":"PS",//数据类型  PS  电厂  GROUP 集团
+            "jsjd":{
+                "jsjdJSJDGZBDMPP":"jsjdJSJDGZBDMPP", // 技术监督工作被点名批评
+                "jsjdJSJDYBHFXBGWAS":"jsjdJSJDYBHFXBGWAS",//技术监督月报或分析报告未按时
+                "jsjdJSJDYZWTWJSCZ":"jsjdJSJDYZWTWJSCZ",//技术监督严重问题未及时处置
+                "jsjdSJAPDQTJSJDGZWAS":"jsjdSJAPDQTJSJDGZWAS",//上级安排的其它技术监督工作未按时
+                "jsjdZXJCZGGZWASWC":"jsjdZXJCZGGZWASWC"//专项检查整改工作未按时完成
+            },
+            "jtpm":{
+                "jtpmDWFDYXXSL":"jtpmDWFDYXXSL",//单位发电用新鲜水量
+                "jtpmDWRLJXFY":"jtpmDWRLJXFY",//单位容量检修费用
+                "jtpmJGXMWCL":"jtpmJGXMWCL",//技改项目完成率
+                "jtpmJZFHL":"jtpmJZFHL",//机组负荷率
+                "jtpmJZZKYMX":"jtpmJZZKYMX",//机组真空严密性
+                "jtpmKKX":"jtpmKKX",//可靠性
+                "jtpmNDDWDLCLFY":"jtpmNDDWDLCLFY",//年度单位电量材料费用
+                "jtpmNDDWDLQTFY":"jtpmNDDWDLQTFY",//年度单位电量其他费用
+                "jtpmQNLYXSS":"jtpmQNLYXSS",//全年利用小时数
+                "jtpmSCPB":"jtpmSCPB",//生产评比
+                "jtpmZHCYDL":"jtpmZHCYDL",// 综合厂用电率
+                "jtpmZHGDMH":"jtpmZHGDMH"//综合供电煤耗
+            },
+            "jx":{
+                "jxAXHLXYX":"jxAXHLXYX",//A修后连续运行
+                "jxAXHRH":"jxAXHRH",//A修后热耗
+                "jxBCXHLXYX":"jxBCXHLXYX",//BC修后连续运行
+                "jxCJXGQ":"jxCJXGQ",//超检修工期
+                "jxCJXJHND":"jxCJXJHND",//超检修计划年度
+                "jxDWRLJXFY":"jxDWRLJXFY",//单位容量检修费用
+                "jxJZAXFYCZ":"jxJZAXFYCZ",//机组A修费用超支
+                "jxJZSJRH":"jxJZSJRH",//机组设计热耗
+                "jxXHYGYNGZTJ":"jxXHYGYNGZTJ"//修后一个月内故障停机
+            },
+            "kkx":{
+                "kkxDXKYXS":"kkxDXKYXS",//等效可用系数
+                "kkxGLMHJQT":"kkxGLMHJQT",//锅炉灭火及其它
+                "kkxGZTJ":"kkxGZTJ",//故障停机
+                "kkxJPJZPB":"kkxJPJZPB",//金牌机组评比
+                "kkxLJFT":"kkxLJFT",// 累计非停
+                "kkxLYXSSSFDDDPJSP":"kkxLYXSSSFDDDPJSP",//利用小时数是否达当地平均水平
+                "kkxSFDWDFHHZZBD":"kkxSFDWDFHHZZBD"//是否电网大负荷或政治保电
+            },
+            "lastUpdateBy":"lastUpdateBy",//上次更新时间
+            "lastUpdateDate":1468390774158,//上次更新时间
+            "notSupportInvestigate":"notSupportInvestigate",//瞒报、迟报、事故调查不配合
+            "ranking":"ranking",//排名
+            "sc":{//生产
+                "scBBCWCSKH":"scBBCWCSKH",//报表错误次数考核
+                "scDJZJSHJQK":"scDJZJSHJQK",//大机组竞赛获奖情况
+                "scDWKF":"scDWKF",//电网扣罚
+                "scJDLYXSS":"scJDLYXSS",//季度利用小时数
+                "scJDPXWCQK":"scJDPXWCQK",//季度培训完成情况
+                "scJGFYCZ":"scJGFYCZ",//技改费用超支
+                "scJGXMWCL":"scJGXMWCL",//技改项目完成率
+                "scJZZRYX":"scJZZRYX",//机组增容运行
+                "scLGXZJLKH":"scLGXZJLKH",//两个细则奖励考核
+                "scLYXSSDDDWPM":"scLYXSSDDDWPM",//利用小时数当地电网排名
+                "scNDDWDLCLFY":"scNDDWDLCLFY",//年度单位电量材料费用
+                "scNDDWDLQTFY":"scNDDWDLQTFY",//年度单位电量其他费用
+                "scQNLYXSS":"scQNLYXSS",//全年利用小时数
+                "scZXDXFYCZ":"scZXDXFYCZ"//专项大修费用超支
+            },
+            "totalAmount":"totalAmount",//总金额合计
+            "zb":{//指标
+                "zbCYDL":"zbCYDL",//厂用电率
+                "zbCYDLDBXYPM":"zbCYDLDBXYPM",//厂用电率对标行业排名
+                "zbDWFDYXXSL":"zbDWFDYXXSL",//单位发电用新鲜水量
+                "zbGDMH":"zbGDMH",//供电煤耗
+                "zbGDMHDBXYPM":"zbGDMHDBXYPM",//供电煤耗对标行业排名
+                "zbGDMHJZSJZ":"zbGDMHJZSJZ",//供电煤耗机组设计值
+                "zbJNJGCXND":"zbJNJGCXND",//节能技改成效年度
+                "zbJNJPPJDF":"zbJNJPPJDF",//节能减排评价得分
+                "zbJNRWWCQK":"zbJNRWWCQK",//节能任务完成情况
+                "zbJZFHL":"zbJZFHL",//机组负荷率
+                "zbJZZKYMX":"zbJZZKYMX",//机组真空严密性
+                "zbZHCYDL":"zbZHCYDL",//综合厂用电率
+                "zbZHCYDLJHFJZ":"zbZHCYDLJHFJZ",//综合供电煤耗计划分解值
+                "zbZHGDMH":"zbZHGDMH",//综合供电煤耗
+                "zbZHGDMHJHFJZ":"zbZHGDMHJHFJZ"//综合供电煤耗计划分解值
+            },
+            "specialWork":{
+                        "KKX":"A",
+                        "SCPB":"B"
+            }
+        }
+    ]
+}
+
+//集团主数据
+{
+    "responseCode":200,//返回状态码
+    "responsMsg":"成功",//描述 若出现异常则为异常信息
+    "result":{
+        "total":2,//总条数
+        "pagedata":[
+            {
+                "createUserId":"12312312-234-123",//创建人ID
+                "createUserName":"李士旺",//创建人姓名
+                "createTime":1468166400000,//创建时间
+                "lastUpdateBy":"hanrongjie",//上次更新人
+                "lastUpdateDate":1468166400000,上次更新时间
+                "summaryId":"summaryId",//汇总ID
+                "summaryCode":"summarycode",//汇总code
+                "benchmarkName":"2016年第三季度",//名称
+                "publishStatus":"N",//发布状态
+                "quarter":"3",//季度
+                "year":"2016",//年份
+                "summaryTime":1468166400000,//汇总时间
+                "note":"note",//备注
+                "auditInstruction":"考核说明",
+                "detailInfo":null  //若不为空则实际为 电厂申报主信息
+            },
+            {
+                "createUserId":"12312312-234-123",
+                "createUserName":null,
+                "createTime":1468166400000,
+                "lastUpdateBy":"hanrongjie",
+                "lastUpdateDate":null,
+                "summaryId":"c3bcd3ff-582e-4cd3-a627-22e8ccae1236",
+                "summaryCode":"summarycode",
+                "benchmarkName":"2016年第三季度",
+                "publishStatus":"N",
+                "quarter":"3",
+                "year":"2016",
+                "summaryTime":1468166400000,
+                "note":"note",
+                "auditInstruction":"审核说明",
+                "detailInfo":null
+            }
+        ]
+    }
+}
+
+//电厂主信息
+{
+    "responseCode":200,
+    "responsMsg":"成功",
+    "result":{
+        "total":1,
+        "pagedata":[
+            {
+                "createUserId":"18bfc36b-f3a6-4a8d-8f65-57a01a9d5f06", //创建人ID
+                "createUserName":"李金焕",//创建人姓名
+                "createTime":1468339200000,//创建时间
+                "lastUpdateBy":"18bfc36b-f3a6-4a8d-8f65-57a01a9d5f06",//上次更新人ID
+                "lastUpdateDate":1468339200000,//上次更新时间
+                "applyId":"a10fba38-f5c0-479a-b161-f6294ffb206a",//申请ID
+                "summaryId":"b183dfd4-9f4c-466f-8d55-06bc8894bf1d",//汇总ID
+                "applyCode":"NDFD:001",//申请Code
+                "benchmarkName":"宁东电厂2016年第3季度",//申请名称
+                "orgId":"ndfd",//电厂ID
+                "publishStatus":"N",//发布状态
+                "auditStatus":"E",//审核状态  
+                "instCode":"instanceCode-001",//流程ID
+                "quarter":"3",//季度  1,2,3,4
+                "year":"2016",//年
+                "applyInstruction":"申报说明",//申报说明
+                "auditInstruction":"考核说明",//考核说明
+                "examInstruction":"审核说明",//审核说明
+                "cardinalNumber":"15.6",//基数
+                "factoryCoefficientNumber":"全场考核基数",//全厂考核基数
+                "singleMachineCoefficientNumber":"单机考核基数",//单机考核基数
+                "detailInfo":null//若不为空 则为电厂申报的具体考核信息
+            }
+        ]
+    }
+}
+
+1.返回示例
+
+基本返回示例  {
+    "responseCode":200,
+    "responsMsg":"成功"
+	}
+带结果的 返回示例
+{
+    "responseCode":200,
+    "responsMsg":"成功",
+    "result":{}
+}
+分页的返回示例
+
+{
+    "responseCode":200,
+    "responsMsg":"成功",
+    "result":{
+        "total":1,
+        "pagedata":[
+            {
+                "A":1
+            }
+        ]
+    }
+}
