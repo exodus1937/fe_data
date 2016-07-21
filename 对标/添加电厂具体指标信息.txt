@@ -21,6 +21,11 @@ http://ip:port/context/benchmark/addBenchmarkStationBaseExtend.do  //添加电�
 var  data =
 {
     "applyId":"a10fba38-f5c0-479a-b161-f6294ffb206a",//申报ID{1}
+    "applyInstruction":"金牌机组评比...",//申报说明
+    "ratifyUser"      :"批准人",
+    "checkUser"       :"核准人",
+    "examUser"        :"审核人",
+    "createUser"      :"制表人",
     "data":[//电厂填写具体数据
         {
             "appType":"A",//{1}
