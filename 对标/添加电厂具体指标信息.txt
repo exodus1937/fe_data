@@ -1,5 +1,22 @@
+
 ///
-http://ip:port/context/benchmark/addBenchmarkStationBaseExtend  //添加电厂具体指标信息
+127.0.0.1:8080/jsjd/benchmark/getSpecialWorkByOrgId.do?orgId=c21834b4-1cb0-490f-a2a8-deeaf7f7e065 //获取专项信息
+
+ $.ajax({
+        url: "127.0.0.1:8080/jsjd/benchmark/getSpecialWorkByOrgId.do?orgId=c21834b4-1cb0-490f-a2a8-deeaf7f7e065",
+		type:"POST",
+        success: function(data) {
+            console.log(data);
+        } 
+      })
+
+返回示例:{"responseCode":200,"responsMsg":"成功","result":{"scgldbzgl":"生产管理对标整改率   *  △","dqzxjczgl":"电气专项检查整改率   *  △"}}
+
+
+
+
+///
+http://ip:port/context/benchmark/addBenchmarkStationBaseExtend.do  //添加电厂具体指标信息
 
 var  data =
 {
