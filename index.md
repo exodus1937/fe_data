@@ -56,5 +56,74 @@
 
 #### 技改折线图
 
-`$.ajax({"/XipTecProject.do",data : {method:"getLineData",id:_id},type:"post",`
+`$.ajax({"/XipTecProject.do",data : {method:"getLineData",id:_id},type:"post",})`
+
+# 集团页面
+
+## 折线图及饼图接口 table-1
+
+### 折线图
+
+`/syzb.do?method=getFDL`
+
+### 饼图
+
+`/syzb.do?method=getAmounts`
+
+## 测点报警 table-2
+
+`/portal/warningMessageList.do?orgid=a61365e2-969d-4352-b3f8-805027ab9f1d&pagenum=1&pagesize=5&ispage=true&unit_status="+unit_status`
+
+## 考核对标 table-3
+
+### 考核
+
+### 对标
+
+## 生产/监督报表 table-4
+
+### 生产报表 table-4-1
+
+`"/portal/getDcScbb.do?orgid="+$("#org").val()`
+
+### 监督报表 table-4-2
+
+`"/portal/supervisionReportPageData.do?orgid=" + $("#org").val() + "&specid=" + $("#spec").val() + "&pagenum=1&pagesize=6&ispage=true"`
+
+## 定期实验/设备轮换/机组启停 table-5
+
+### 定期实验 table-5-1
+
+`/portal/getJTSYCount.do`
+### 设备轮换 table-5-2
+
+`/portal/getJTLHCount.do`
+
+### 机组启停 table-5-3
+
+`/portal/getJTJzqtList.do`
+
+## 机组事件/预警通知单 table-6
+
+### 机组事件 table-6-1
+
+`/portal/getJTGZList.do`
+
+### 预警通知单 table-6-2
+
+`"/portal/warningNoticeList.do?orgid=" + $("#org").val() + "&specid=" + $("#spec").val()+ "&pagenum=1&pagesize=6&ispage=true"`
+
+## 技改 与 电厂相同 tale-7
+
+## 通知公告 table-8
+ 
+`/mainDate.do?method=getJtDynamic`
+
+
+
+
+
+
+
+
 
