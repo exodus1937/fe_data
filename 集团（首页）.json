@@ -17,7 +17,7 @@
 	   YEARAMOUNT 本年考核金额（元）
 	   MONTHNUM   本月考核金额（元）
 	   MONTHMOUNT 本月考核次数 
-	[{"MONTHNUM":"275","YEARNUM":"476","MONTHMOUNT":"114600","YEARAMOUNT":"311200","ORGNAME":"宁东发电"},{"MONTHNUM":"416","YEARNUM":"649","MONTHMOUNT":"139800","YEARAMOUNT":"358550","ORGNAME":"岱海发电"}]
+	
 		/*集团首页设备轮换*/
 		
 		$.ajax({
