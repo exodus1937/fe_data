@@ -95,7 +95,9 @@
              NAME        启动项目 
              STARTTIME   开始时间
              ENDTIME     结束时间
-             PARATIME   并网时间
+             PARATIME   并网时间（启机）/解列时间（停机）
+             FIRETIME   点火时间（启机）/灭火时间（停机）
+             RUSHTIME   冲车时间（启机）/打闸时间（停机）
              QT_DESC    启停机说明
 
 
