@@ -9,7 +9,7 @@
     根据电厂不同来显示不同数据
 > 
 #### HttpMethod: `get`
-#### Url: 'jsjd/portal.do?method=getLogininfo&org_id=''&nameValue=''&startTime=''&endTime=''&status='''
+#### Url: 'jsjd/portal.do?method=getLogininfo&org_id=""&nameValue=""&startTime=""&endTime=""&status=""'
 #### request: data
 param      | description        | 动态传入
 -----------|--------------------|---------
