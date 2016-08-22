@@ -14,6 +14,6 @@
 * [机组启停](erji/jzqt.md)
 * [定期实验](erji/dqsy.md)
 * [设备轮换](erji/sblh.md)
-* [机组启停](erji/ycqk.md)
+* [异常情况](erji/ycqk.md)
 * [机组运行状态](erji/jz_opration.md)
 
