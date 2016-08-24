@@ -157,3 +157,20 @@ gId|str|true|机组ID
 	    "QJ":"汽机专业",
 	    "GL":"锅炉专业"
 	}
+
+### 5.获取集团统计汇总 ###
+
+#### HttpMethod: `POST`
+#### Url: "127.0.0.1:8080/jsjd/portal/getJTLHTotal.do"
+### Request:
+
+###Response:
+
+  字段          | 类型         |是否可空 |描述  |
+-------------   | -------------|--------|------|
+YSCOUNT|int|false|本年应做（次）
+YCOUNT|int|false|本年已做（次）
+YEARRATE|str|true|本年完成率（%）
+MSCOUNT|int|false|本月应做（次）
+MCOUNT|int|false|本月已做（次）
+MONTHRATE|str|false|本月完成率（%）
