@@ -186,8 +186,8 @@ orgid     |      String    |true|单位
 g_id      |      String    |true|机组
 name      |      String    |true|名称
 year      |      String    |true|年份
-pagenum   |      int       |true|页码
-pagesize  |      int       |false| 每页显示记录数 
+pagenum   |      int       |false|页码
+pagesize  |      int       |false| 每页显示记录数   
 ###Response:
 
   字段          | 类型         |是否可空 |描述  |
