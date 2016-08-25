@@ -157,7 +157,7 @@ gId|str|true|机组ID
 	}
 
 
-### 5.获取集团统计汇总 ###
+### 5.获取集团统计汇总(次数) ###
 
 #### HttpMethod: `POST`
 #### Url: "127.0.0.1:8080/jsjd/portal/getJTSYTotal.do"
@@ -176,3 +176,37 @@ MONTHRATE|str|false|本月完成率（%）
 
 ### 返回示例 ###
 	[{"MONTHRATE":"7.82%","YSCOUNT":2924,"YEARRATE":"1.85%","MCOUNT":19,"MSCOUNT":243,"YCOUNT":54}]
+
+
+### 6.获取集团统计汇总（列表） ###
+
+#### HttpMethod: `POST`
+#### Url: "127.0.0.1:8080/jsjd/portal.do"
+### Request:
+  字段          | 字段值         |是否可空 |描述  |
+-------------   | -------------|--------|------|
+method    | "getJTSYinfos" |false|方法名
+orgid     |      String    |true|单位
+g_id      |      String    |true|机组
+name      |      String    |true|名称
+year      |      String    |true|年份
+pagenum   |      int       |true|页码
+pagesize  |      int       |false| 每页显示记录数 
+###Response:
+
+  字段          | 类型         |是否可空 |描述  |
+-------------   | -------------|--------|------|
+ORG_NAME|str|false|单位
+G_ID|str|false|机组
+NAME|str|false|试验名称
+YSCOUNT|int|false|本年应做（次）
+YCOUNT|int|false|本年已做（次）
+MSCOUNT|int|false|本月应做（次）（1月-12月）
+MCOUNT1|int|false|1月本月已做（次）
+MCOUNT2|int|false|2月本月已做（次）
+MCOUNT3|int|false|3月本月已做（次）
+### 以此类推 1到12月的本月已做次数
+MCOUNT12|int|false|12月本月已做（次）
+
+### 返回示例 ###
+	{"total":178,"exper":[{"MCOUNT9":"0","MCOUNT8":"0","MCOUNT7":"0","NAME":"消防水泵点动试验","MCOUNT6":"0","MCOUNT5":"0","MCOUNT4":"0","ORG_NAME":"岱海发电","G_ID":"1","MCOUNT3":"0","MCOUNT2":"0","YSCOUNT":"12","MCOUNT1":"0","MCOUNT11":"0","MCOUNT12":"0","MSCOUNT":"1","YCOUNT":"0","MCOUNT10":"0"},{"MCOUNT9":"0","MCOUNT8":"0","MCOUNT7":"0","NAME":"消防喷淋泵试验","MCOUNT6":"0","MCOUNT5":"0","MCOUNT4":"0","ORG_NAME":"岱海发电","G_ID":"1","MCOUNT3":"0","MCOUNT2":"0","YSCOUNT":"12","MCOUNT1":"0","MCOUNT11":"0","MCOUNT12":"0","MSCOUNT":"1","YCOUNT":"0","MCOUNT10":"0"},{"MCOUNT9":"0","MCOUNT8":"0","MCOUNT7":"1","NAME":"柴油发电机启动试验","MCOUNT6":"0","MCOUNT5":"0","MCOUNT4":"0","ORG_NAME":"岱海发电","G_ID":"1","MCOUNT3":"0","MCOUNT2":"0","YSCOUNT":"12","MCOUNT1":"0","MCOUNT11":"0","MCOUNT12":"0","MSCOUNT":"1","YCOUNT":"1","MCOUNT10":"0"},{"MCOUNT9":"0","MCOUNT8":"0","MCOUNT7":"1","NAME":"事故照明MCC切换试验","MCOUNT6":"0","MCOUNT5":"0","MCOUNT4":"0","ORG_NAME":"岱海发电","G_ID":"1","MCOUNT3":"0","MCOUNT2":"0","YSCOUNT":"12","MCOUNT1":"0","MCOUNT11":"0","MCOUNT12":"0","MSCOUNT":"1","YCOUNT":"1","MCOUNT10":"0"},{"MCOUNT9":"0","MCOUNT8":"0","MCOUNT7":"0","NAME":"主机阀门全行程活动试验（TV1）","MCOUNT6":"0","MCOUNT5":"0","MCOUNT4":"1","ORG_NAME":"岱海发电","G_ID":"1","MCOUNT3":"0","MCOUNT2":"0","YSCOUNT":"12","MCOUNT1":"0","MCOUNT11":"0","MCOUNT12":"0","MSCOUNT":"1","YCOUNT":"1","MCOUNT10":"0"}]}

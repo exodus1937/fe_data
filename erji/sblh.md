@@ -158,7 +158,7 @@ gId|str|true|机组ID
 	    "GL":"锅炉专业"
 	}
 
-### 5.获取集团统计汇总 ###
+### 5.获取集团统计汇总（总数） ###
 
 #### HttpMethod: `POST`
 #### Url: "127.0.0.1:8080/jsjd/portal/getJTLHTotal.do"
@@ -174,3 +174,32 @@ YEARRATE|str|true|本年完成率（%）
 MSCOUNT|int|false|本月应做（次）
 MCOUNT|int|false|本月已做（次）
 MONTHRATE|str|false|本月完成率（%）
+### 6.获取集团统计汇总（列表） ###
+
+#### HttpMethod: `POST`
+#### Url: "127.0.0.1:8080/jsjd/portal.do"
+### Request:
+  字段          | 字段值         |是否可空 |描述  |
+-------------   | -------------|--------|------|
+method    | "getJTSYinfos" |false|方法名
+orgid     |      String    |true|单位
+g_id      |      String    |true|机组
+name      |      String    |true|名称
+year      |      String    |true|年份
+pagenum   |      int       |true|页码
+pagesize  |      int       |false| 每页显示记录数 
+###Response:
+
+  字段          | 类型         |是否可空 |描述  |
+-------------   | -------------|--------|------|
+ORG_NAME|str|false|单位
+G_ID|str|false|机组
+NAME|str|false|轮换名称
+YSCOUNT|int|false|本年应做（次）
+YCOUNT|int|false|本年已做（次）
+MSCOUNT|int|false|本月应做（次）（1月-12月）
+MCOUNT1|int|false|1月本月已做（次）
+MCOUNT2|int|false|2月本月已做（次）
+MCOUNT3|int|false|3月本月已做（次）
+### 以此类推 1到12月的本月已做次数
+MCOUNT12|int|false|12月本月已做（次）
