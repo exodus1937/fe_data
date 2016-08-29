@@ -10,7 +10,8 @@ orgid     |      String    |true|单位
 g_id      |      String    |true|机组
 name      |      String    |true|异常类型
 year      |      String    |true|年份
-
+pagenum   |      int       |false|页码
+pagesize  |      int       |false| 每页显示记录数  
 
 ###Response:
 
