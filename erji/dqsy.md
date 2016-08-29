@@ -159,7 +159,7 @@ gId|str|true|机组ID
 
 ### 5.获取集团统计汇总(次数) ###
 
-#### HttpMethod: `POST`
+#### HttpMethod: `GET`
 #### Url: "127.0.0.1:8080/jsjd/portal/getJTSYTotal.do"
 ### Request:
 
