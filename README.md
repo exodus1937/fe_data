@@ -1,6 +1,6 @@
 # fe_data
    
-   前后台展示的的方法版本控制。
+   前后台展示的的接口版本控制。
    
 ## 首页
 * [电厂和集团首页接口快速预览](index.md)
@@ -15,4 +15,5 @@
 * [异常情况](erji/ycqk.md)
 * [机组运行状态](erji/jz_opration.md)
 * [机组启停——状态参数对比](erji/jzqt_compare.md)
+* [考核页面](erji/kaohe.md)
 

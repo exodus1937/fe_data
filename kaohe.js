@@ -20,16 +20,16 @@
 
 //参数：org_id
 //字段描述：
-/*        amount    金额
-          orgId 电厂ID
-          id  主ID
-          infomation 通知显示内容
-          status 流程状态（申述状态）流程状态(1：草稿2：审核中3：审核通过4：驳回)
-          tag 是否已申诉标记
-          date 考核日期
-          orgName 电厂名称	
-          key 是否考核
-          mode 考核方式
+/*      amount   金额
+        orgId    电厂ID
+        id       主ID
+      infomation 通知显示内容
+        status   流程状态（申述状态）流程状态(1：草稿2：审核中3：审核通过4：驳回)
+        tag      是否已申诉标记
+        date     考核日期
+        orgName  电厂名称	
+        key      是否考核
+        mode     考核方式
           */
           //数据
           {
