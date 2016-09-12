@@ -8,11 +8,16 @@
     根据电厂不同来显示不同数据
 > 
 #### HttpMethod: `POST`
-#### Url: `/jsjd/getKaoheAction.do?method=getTongJi&org_id=${org_id}`
+#### Url: `/jsjdXipExperimentAction.do`
 #### request: data
-param      | description        | 动态传入
+param      | description        | 是否可空
 -----------|--------------------|---------
-orgid      | orgid              | true
+method     | getTesBaTPWMarketData|否
+orgid      | orgid              | 是
+g_id       | 机组（1|2|3|4）     | 是
+sysName    | 系统名称（模糊搜索/中文）  | 是
+ptCode     | 测点编码 （模糊搜索）   | 是
+ptDesc     | 测点描述（模糊搜索/中文）|是
 #### Response:      
 param      | description
 -----------|---------------
