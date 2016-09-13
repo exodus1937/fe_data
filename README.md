@@ -16,4 +16,6 @@
 * [机组运行状态](erji/jz_opration.md)
 * [机组启停——状态参数对比](erji/jzqt_compare.md)
 * [考核页面](erji/kaohe.md)
+* [指标大盘](erji/market.md)
+
 
