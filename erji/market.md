@@ -77,10 +77,10 @@ value      |   值
 #### 示例数据
 ```json
     {
-        status:"0"
-        tag:"NMDH:10DEH01AI005XQ01"
-        time:"2016-09-13 14:20:39.0"
-        value:626.6
+        "status":"0",
+        "tag":"NMDH:10DEH01AI005XQ01",
+        "time":"2016-09-13 14:20:39.0",
+        "value":626.6
     }
 
 ```
