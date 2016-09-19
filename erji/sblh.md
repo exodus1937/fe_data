@@ -192,7 +192,7 @@ pagesize  |      int       |false| 每页显示记录数
 ###Response:
 
   字段          | 类型         |是否可空 |描述  |
--------------   | -------------|--------|------|
+-------------|-------------|--------|------|
 ORG_NAME|str|false|单位
 G_ID|str|false|机组
 NAME|str|false|轮换名称
@@ -202,5 +202,6 @@ MSCOUNT|int|false|本月应做（次）（1月-12月）
 MCOUNT1|int|false|1月本月已做（次）
 MCOUNT2|int|false|2月本月已做（次）
 MCOUNT3|int|false|3月本月已做（次）
-### 以此类推 1到12月的本月已做次数
+···|···|···|····
 MCOUNT12|int|false|12月本月已做（次）
+
