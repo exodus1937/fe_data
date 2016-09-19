@@ -99,7 +99,8 @@ ysCount|int|false|本年应做
 msCount|int|false|本月应做
 yCount|int|false|本年已做
 mCount|int|false|本月已做
-fCount|int|false| 非轮换期或实验期做
+fCount|int|false| 非轮换期或实验期做(年)
+fmC|int|false|非轮换期或实验期做(月)
 
 ###返回示例:
 	[
