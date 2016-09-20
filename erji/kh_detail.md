@@ -2,9 +2,9 @@
 
 ## 一.基本信息
 
-#### HttpMethod: `GET`
-#### Url: "/jsjd/portal/xxxxx.do?code={{code}}"
-#### Request:
+### HttpMethod: `GET`
+### Url: "/jsjd/portal/xxxxx.do?code={{code}}"
+### Request:
 
   字段   |  描述  |
 --------|--------|
@@ -15,7 +15,7 @@ code    |  kks 编码
   字段   | 描述  |
 --------|-------|
 code|kks编码
-cDesc|kks编码
+cDesc|kks编码描述
 cRule|考核规则
 
 ### 返回示例
@@ -29,15 +29,15 @@ cRule|考核规则
 
 ## 二.统计信息
 
-#### HttpMethod: `GET`
-#### Url: "/jsjd/portal/xxxxx.do?code={{code}}&st={{startTime}}&et={{endTime}}"
-#### Request:
+### HttpMethod: `GET`
+### Url: "/jsjd/portal/xxxxx.do?code={{code}}&st={{startTime}}&et={{endTime}}"
+### Request:
 
   字段   |  描述  |
 --------|--------|
-code    |  kks 编码
+code|kks编码
 st|开始时间
-et|开始时间
+et|结束时间
 
 ###Response:
 
@@ -59,3 +59,38 @@ deltaTime|累计时长
     "deltaTime":"deltaTime"
 	}
 
+## 三.详细信息
+
+### HttpMethod: `GET`
+### Url: "/jsjd/portal/xxxxx.do?code={{code}}&pagenum={{pagenum}}&pageSize={{lpageSize}}"
+### Request:
+
+  字段   |  描述  |
+--------|--------|
+code|kks编码
+st|开始时间
+et|结束时间
+
+### Response:
+
+  字段   | 描述  |
+--------|-------|
+val|考核值
+st|考核时间
+et|结束时间
+deltaTime|持续时长
+money|考核金额
+status|申述状态(N否/Y是)
+flag|是否考核(N否/Y是)
+
+### 返回示例
+
+	{
+	  "val":"val",
+	  "st":"st",
+	  "et":"et",
+    "deltaTime":"deltaTime",
+    "money":"money",
+    "status","status",
+    "flag","flag"
+	}
